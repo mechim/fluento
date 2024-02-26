@@ -3,19 +3,29 @@
     padding: 0;
     box-sizing: border-box;
     font-family:sans-serif;
-
 }
-
-
+a{
+    text-decoration: none;
+}
+hr{
+    border-style: dotted none none none;
+    border-width: 5px;
+    border-color: #d64646;
+    width: 10%;
+    margin: auto;
+}
+/* body{
+    text-align: center;
+} */
 .navbar {
-    background-color: #ED7D31;
+    background-color: #6395AC;
     overflow: hidden;
     height: 50px;
 }
 
 .navbar a {
     float: right;
-    color: #f2f2f2;
+    color: #D11B1B;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -24,7 +34,7 @@
 }
 .navbar p {
     float: left;
-    color: #f2f2f2;
+    color: #D11B1B;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -32,8 +42,8 @@
 }
 
 .navbar a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #D11B1B;
+    color: white;
 }
 
 .navbar a.active {
@@ -41,12 +51,11 @@
     color: white;
 }
 
-.container{
+/* .container{
     padding: 3% 15% 7%;
-    /* background-color: #F6F1EE; */
 
 }
-  
+   */
 
 
 /* main */
@@ -55,19 +64,22 @@
 
     overflow: hidden;
     display: flex;
-    align-items: center;
-    justify-content:left;
-    height: 400px;
+    align-items:center;
+    justify-content:center;
+    height: 500px;
+    padding-bottom: 0;
+    background-color: #BCD5E1;
+
     /* background-color: #F6F1EE; */
 
 }
 
 .main img{
-    width: 300px;
-    height: 300px;
-    max-width: 50%;
-    height: auto;
-    color: #6C5F5B;
+    width: auto;
+    height: 450px;
+    /* max-width: 50%; */
+    /* height: auto; */
+    color: #D11B1B;
 
 }
 
@@ -77,51 +89,113 @@
 
     margin-left: 30px;
 
-    color: #6C5F5B;
+    color: #D11B1B;
+    
 }
+
+.main-link{
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+    margin-top: 20px;
+    background-color: #BCD5E1;
+    color: #D11B1B;
+    border-width: 2px;
+    border-color: #D11B1B;
+    border-style: solid;
+    /* padding: auto; */
+    text-align: center;
+    padding: 12px;
+}
+
+.main-link:hover{
+    background-color: #D11B1B;
+    color: #fff;
+
+}
+/* .main-link h3{ */
+    /* padding-top: 40px; */
+    /* text-decoration: none;
+    color: #D11B1B;
+
+} */
+.main-link a{
+    text-decoration: none;
+}
+
 
 .main-text h2 {
     margin-top: 10px;
 }
-
-/* why us */
-
-.why-us{
-    background-color: #6C5F5B;
-    height: 200px;
-    align-items: center;
-    text-align: center;
-    padding: 20px 15%;
-    /* display: flex; */
-}
-
-.why-us h1, h4, h3{
-    margin-top: 10px;
-    color: #fff;
-
-}
-
-/* research */
-
 /* roadmap */
 .roadmap{
-    background-color: #ED7D31;
+    background-color: #8FBDD3;
+
     overflow: hidden;
     height: 300px;
 
     display: flex;
     align-items: center;
     align-content: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .roadmap img {
 
-    height: 200px;
+    height: 100px;
     width: auto;
-    margin-right: 30px;
+    /* margin-right: 30px; */
+
+}
+
+.roadmap-element{
+    background-color: #F6F1EE;
+    border-radius: 20px;
+    height: 250px;
+    width: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* align-content: center; */
+    flex-direction: column;
+}
+
+/* why us */
+
+.why-us{
+    height: 300px;
+    align-items: center;
+    text-align: center;
+    padding: 20px 15%;
+    background-color: #8FBDD3;
+
+    /* display: flex; */
+}
+
+/* .why-us h1, h4, h3{
+    margin-top: 10px;
+    color: #fff;
+    margin-bottom: 50px;
+
+} */
+
+/* research */
+
+
+.roadmap-element h3{
+    color: #4F4A45;
 }
 
 /* testimonials */
 
 /* footer */
+
+.footer{
+    height: 100px;
+    background-color: #6395AC;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
