@@ -24,7 +24,7 @@ a{
     /* padding: 14px 16px; */
     margin-right: 95px;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: bolder;
     height: 100%;
     color: white;
@@ -36,7 +36,7 @@ a{
     text-align: center;
     /* padding: 14px 16px; */
     text-decoration: none;
-    font-size: 12px;
+    font-size: 16px;
     color: #fff;
 }
 
@@ -81,7 +81,7 @@ a{
     text-align: left;
 
     margin-left: 9vw;
-    margin-top: 17vw;
+    margin-top: 14vw;
     color: #fff;
     
 }
@@ -90,7 +90,7 @@ a{
     border-radius: 10px;
     height: 46px;
     width: 156px;
-    margin-top: 20px;
+    margin-top: 47px;
     background-color: #fff;
     color: #000;
     /* border-width: 2px;
@@ -124,7 +124,7 @@ a{
     font-weight: normal;
 }
 .main-text h2 {
-    margin-top: 5px;
+    margin-top: 6px;
     font-size: 20px;
 
 }
