@@ -3,15 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family:sans-serif;
-    /* display: block; */
 }
 a{
     text-decoration: none;
 }
 
-/* body{
-    text-align: center;
-} */
 .navbar {
     overflow: hidden;
     height: 25px;
@@ -49,6 +45,8 @@ a{
 .navbar a.active {
     color: white;
 }
+
+
 
 /* .container{
     padding: 3% 15% 7%;
@@ -132,6 +130,7 @@ a{
 .main-text h1{
     font-size: 48px;
 }
+
 /* method */
 
 .method{
@@ -263,4 +262,154 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+
+    /* navbar */
+
+    .navbar{
+        display: flex;
+        justify-content: center;
+    }
+    .navbar a {
+        display: none;
+    }
+    .navbar p {
+        float:none;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    
+    /* hero */
+
+    .hero{
+        background-color: #000;
+        background-image: url('./img/hero-blur.png');
+
+        height: 812px;
+        max-width: 800px;
+        width: 100vw;
+        aspect-ratio: none;
+
+        background-size: auto 900px;
+        background-position: 85%;
+        background-clip: padding-box;
+    }
+
+    .main-text{
+        max-width: 100%;
+        text-align: center;
+        margin: auto;
+        margin-top: 377px;
+    }
+    .main-text h1{
+        font-size: 36px;
+        
+    }
+
+    .main-link{
+        width: 203px;
+        height: 62px;
+        border-radius: 20px;
+        margin: auto;
+        margin-top: 80px;
+    }
+    .main-link h3{
+        font-size: 20px;
+    }
+
+    /* method */
+
+    .method{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        width: 100vw;
+    }
+
+    .method-card{
+        margin: 41px 0;
+    }
+
+    /* roadmap */
+
+    .roadmap{
+        height: auto;
+        padding: 80px 0;
+    }
+
+    .roadmap-element{
+        width: 253px;
+        height: 298px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 61px;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        margin-top: 38px;
+    }
+    
+    .roadmap-element img{
+        width: 130px;
+        height: auto;
+        margin: 0;
+    }
+
+    .roadmap-element h2{
+        margin-top: 22px;
+    }
+    .roadmap-element p {
+        margin-top: 16px;
+    }
+
+
+    /* community */
+
+    .community{
+        height: 645px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        padding: 0;
+        position: relative;
+    }
+    
+    .community-image{
+        position: absolute;
+        top: 127px;
+        width: 310px;
+        height: 233px;
+    }
+
+    .community-card{
+        position: absolute;
+        height: 136px;
+        width: 341px;
+        top: 320px;
+        padding: 9px 0 16px 10px;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, .25);
+    }
+
+    .community-card h2{
+        font-size: 24px;
+    }
+
+    .community-card p{
+        font-size: 16px;
+        margin-top: 7px;
+    }
+
+    /* footer */
+
+    .footer{
+        box-shadow: none;
+        height: 117px;
+    }
 }
