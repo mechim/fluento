@@ -9,30 +9,29 @@ a{
 }
 
 .navbar {
-    overflow: hidden;
+    /* overflow: hidden;
     height: 25px;
-    margin-top: 30px;
+    margin-top: 30px; */
 }
 
 .navbar a {
-    float: right;
     text-align: center;
     margin-right: 95px;
     text-decoration: none;
     font-size: 16px;
-    font-weight: bolder;
+    font-weight: bolder !important; 
     height: 100%;
     color: white;
 }
 .navbar p {
     margin-left: 118px;
-    font-weight: bolder;
-    float: left;
+    font-weight: bolder !important;
     text-align: center;
     /* padding: 14px 16px; */
     text-decoration: none;
     font-size: 16px;
     color: #fff;
+    margin: 0;
 }
 
 .navbar a:hover {
@@ -106,6 +105,7 @@ a{
 
 .main-text h1{
     font-size: 48px;
+    font-weight: bold;
 }
 
 /* method */
@@ -140,6 +140,7 @@ a{
 .method-card-title{
     font-size: 20px;
     margin-top: 28px;
+    font-weight: bold;
 }
 .method-card-text{
     text-align: center;
@@ -181,6 +182,7 @@ a{
     margin-top: 32px;
     font-size: 24px;
     color: white;
+    font-weight: bold;
 }
 .roadmap-element p{
     color: white;
@@ -218,6 +220,7 @@ a{
 }
 .community-card h2{
     font-size: 24px;
+    font-weight: bold;
 }
 
 .community-card p{
@@ -242,6 +245,39 @@ a{
     justify-content: center;
     align-items: center;
 }
+
+.mascot {
+    position: fixed;
+    right: 2vw;
+    /* top: 20vw; */
+    bottom: -1vw;
+    animation: appear 10s forwards, bounce 3s infinite alternate;
+}
+.mascot img {
+    width: 12vw;
+}
+
+.mascot:hover::before {
+    content: "Language is all input";
+
+    display: block;
+    position: absolute;
+    
+    bottom: 100%;
+    /* left: -50%; */
+    transform: translateX(-50%);
+    
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 1vw;
+
+    color: black;
+    font-size: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
 
 @media screen and (max-width: 800px) {
 
@@ -427,8 +463,15 @@ a{
     }
 
     .mascot{
-        display: none;
+        right: 10vw;
+        bottom: 0vw;
+        /* display: none; */
     }
+    .mascot img{
+        width: 30vw;
+        animation: none;
+    }
+    
 }
 
 
@@ -450,36 +493,4 @@ a{
     to {
         opacity: 1;
     }
-}
-
-.mascot {
-    position: fixed;
-    right: 2vw;
-    /* top: 20vw; */
-    bottom: -1vw;
-    animation: appear 10s forwards, bounce 3s infinite alternate;
-}
-.mascot img {
-    width: 12vw;
-}
-
-.mascot:hover::before {
-    content: "Language is all input";
-
-    display: block;
-    position: absolute;
-    
-    bottom: 100%;
-    /* left: -50%; */
-    transform: translateX(-50%);
-    
-    padding: 10px;
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 1vw;
-
-    color: black;
-    font-size: 1vw;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
 }
